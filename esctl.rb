@@ -11,6 +11,7 @@ class Esctl < Formula
   depends_on "go" => :build
 
   def install
+    ENV["GOPROXY"]="https://goproxy.cn,direct"
     system "go", "build", "-o", bin/"esctl"
   end
 
