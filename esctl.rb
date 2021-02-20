@@ -4,8 +4,8 @@
 class Esctl < Formula
   desc "CLI for managing the ElasticSearch cluster"
   homepage ""
-  url "https://github.com/zhb127/esctl/archive/v0.0.5.tar.gz"
-  sha256 "239090b56266b8b23c1d578decd56e7e1677f89a410500d829332d007c1889c6"
+  url "https://github.com/zhb127/esctl/archive/v0.0.7.tar.gz"
+  sha256 "303f6fd9070eddeb32290f105582f550f6c55ac206fba4e255875789888027df"
   license "GPL-3.0"
 
   depends_on "go" => :build
