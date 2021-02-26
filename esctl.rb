@@ -1,6 +1,6 @@
 class Esctl < Formula
   desc "CLI for managing the ElasticSearch cluster"
-  homepage ""
+  homepage "https://github.com/zhb127/esctl"
   url "https://github.com/zhb127/esctl/archive/v0.0.13.tar.gz"
   sha256 "ac646dcec039e4dbd15bd1ad2745f5a343c559858499cf5886940a47bfa8210a"
   license "GPL-3.0"
