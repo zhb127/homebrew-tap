@@ -4,27 +4,19 @@
 class Esctl < Formula
   desc "CLI for managing the ElasticSearch cluster"
   homepage ""
-  url "https://github.com/zhb127/esctl/archive/v0.0.12.tar.gz"
-  sha256 "369a6750fa227bb610588b81d2982e8131487d42bf2f36bd8ac6a6df355db3aa"
+  url "https://github.com/zhb127/esctl/archive/v0.0.13.tar.gz"
+  sha256 "ac646dcec039e4dbd15bd1ad2745f5a343c559858499cf5886940a47bfa8210a"
   license "GPL-3.0"
 
   depends_on "go" => :build
 
   def install
     ENV["GOPROXY"]="https://goproxy.cn,direct"
-    system "go", "build", "-o", bin/"esctl"
+    system "go", "build", *std_go_args
   end
 
   test do
-    # `test do` will create, run in and delete a temporary directory.
-    #
-    # This test will fail and we won't accept that! For Homebrew/homebrew-core
-    # this will need to be a test that verifies the functionality of the
-    # software. Run the test with `brew test esctl`. Options passed
-    # to `brew install` such as `--HEAD` also need to be provided to `brew test`.
-    #
-    # The installed folder is not in the path, so use the entire path to any
-    # executables being tested: `system "#{bin}/program", "do", "something"`.
-    system "false"
+    ENV.delete "GITHUB_TOKEN"
+    assert_match "no Github token found", shell_output(bin/"esctl", 255)
   end
 end
