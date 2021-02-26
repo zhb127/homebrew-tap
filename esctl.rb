@@ -13,7 +13,6 @@ class Esctl < Formula
   end
 
   test do
-    ENV.delete "GITHUB_TOKEN"
     assert_match "esctl controls the ElasticSearch cluster manager", shell_output(bin/"esctl")
   end
 end
