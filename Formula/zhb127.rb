@@ -1,8 +1,5 @@
-# Documentation: https://docs.brew.sh/Formula-Cookbook
-#                https://rubydoc.brew.sh/Formula
-# PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class Zhb127 < Formula
-  desc ""
+  desc "echo helloworld"
   homepage ""
   url "https://github.com/zhb127/homebrew-helloworld/archive/0.1.tar.gz"
   sha256 "dd26eb15512fc5418e9a522746e87151f37da4bdae60dc5483aba10393d125c7"
@@ -11,7 +8,6 @@ class Zhb127 < Formula
   depends_on "go" => :build
 
   def install
-    # ENV.deparallelize  # if your formula fails when building in parallel
     system "go", "build", *std_go_args
   end
 
