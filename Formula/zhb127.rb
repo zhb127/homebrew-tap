@@ -12,6 +12,6 @@ class Zhb127 < Formula
   end
 
   test do
-    assert_match "Hello World", shell_output(bin/"zhb127", 0)
+    assert_match "Hello World", shell_output(bin/"zhb127")
   end
 end
