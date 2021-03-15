@@ -2,7 +2,7 @@ class Zhb127 < Formula
   desc "Echo helloworld"
   homepage "https://github.com/zhb127/homebrew-tap"
   url "https://github.com/zhb127/homebrew-helloworld/archive/0.2.tar.gz"
-  sha256 "22593282b7f039a979a850a6436ce63ba72c7dfdb07b69c3313f348148dba1ad"
+  sha256 "0a4bb69758204a5ec735bcb1ba1f2ae4a80ded05d8b6fcd62109924d1b43133d"
   license ""
 
   depends_on "go" => :build
