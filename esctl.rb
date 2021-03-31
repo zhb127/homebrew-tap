@@ -3,7 +3,7 @@ class Esctl < Formula
   homepage "https://github.com/zhb127/esctl"
   url "https://github.com/zhb127/esctl/archive/v0.0.19.tar.gz"
   sha256 "ec334bc23402cccff781fcbb0555c6200b7bedb30d3377fccddab23b71958fad"
-  license "GPL-3.0"
+  license "GPL"
 
   depends_on "go" => :build
 
