@@ -1,15 +1,9 @@
 class Esctl < Formula
   desc "CLI for managing the ElasticSearch cluster"
   homepage "https://github.com/zhb127/esctl"
-  url "https://github.com/zhb127/esctl/archive/v0.0.19.tar.gz"
-  sha256 "ec334bc23402cccff781fcbb0555c6200b7bedb30d3377fccddab23b71958fad"
+  url "https://github.com/zhb127/esctl/archive/v0.0.20.tar.gz"
+  sha256 "5768870a6f20871244819df93d5aef79da8e2b189ae479816f8645c416dabf16"
   license "GPL-3.0-or-later"
-
-  bottle do
-    root_url "https://github.com/zhb127/homebrew-tap/releases/download/esctl-0.0.19"
-    sha256 cellar: :any_skip_relocation, catalina:     "1aca87121c6b01b3c73306be4f595643c006ab4447d86addfbc4185764a83c39"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "fdd389db3d724d48efe8ee54f74f8f08f7edfccc13746e08cd1b39a7a6df8aa3"
-  end
 
   depends_on "go" => :build
 
